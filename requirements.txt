@@ -46,10 +46,9 @@ mplfinance
 plotly
 ta-lib
 python-dateutil
-PIL
+Pillow
 newsapi
 nltk
-torch
 pathlib
 opencv-python-headless
 opencv-contrib-python
