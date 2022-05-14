@@ -44,7 +44,7 @@ yfinance
 mplfinance
 
 plotly
-talib
+ta-lib
 dateutil
 PIL
 newsapi
