@@ -38,8 +38,9 @@ tensorflow>=2.4.1  # TFLite export
 # roboflow
 
 yfinance
-mplfinance
 shutil
+mplfinance
+
 plotly
 talib
 dateutil
