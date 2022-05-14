@@ -47,7 +47,9 @@ sia = SentimentIntensityAnalyzer()
 import numpy as np
 # import newsapi to collect news headlines and description
 from newsapi import NewsApiClient
-
+from pathlib import Path
+import requests
+import torch
 
 # check if the library folder already exists, to avoid building everytime you load the pahe
 if not os.path.isdir("/tmp/ta-lib"):
@@ -123,9 +125,7 @@ def save_response_content(response, destination):
             if chunk: # filter out keep-alive new chunks
                 f.write(chunk)
 
-from pathlib import Path
-import requests
-import torch
+
 device = torch.device('cpu')
 def load_models():
 
