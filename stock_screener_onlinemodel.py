@@ -38,6 +38,7 @@ from PIL import Image
 #for news sentimental analysis
 # import nlp module
 import nltk
+nltk.download('wordnet')
 # install vader for sentiment analysis
 #nltk.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
