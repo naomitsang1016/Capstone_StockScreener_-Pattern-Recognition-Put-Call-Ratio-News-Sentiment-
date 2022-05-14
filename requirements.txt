@@ -36,9 +36,9 @@ tensorflow>=2.4.1  # TFLite export
 # Cython  # for pycocotools https://github.com/cocodataset/cocoapi/issues/172
 # pycocotools>=2.0  # COCO mAP
 # roboflow
-
-yfinance
 shutil
+yfinance
+
 mplfinance
 
 plotly
