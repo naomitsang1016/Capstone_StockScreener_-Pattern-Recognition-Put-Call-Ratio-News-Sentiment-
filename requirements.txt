@@ -45,7 +45,7 @@ mplfinance
 
 plotly
 ta-lib
-dateutil
+python-dateutil
 PIL
 newsapi
 nltk
