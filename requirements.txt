@@ -47,7 +47,7 @@ plotly
 # ta-lib
 python-dateutil
 Pillow
-newsapi
+newsapi-python
 nltk
 pathlib
 opencv-python-headless
