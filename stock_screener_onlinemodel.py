@@ -40,7 +40,7 @@ from PIL import Image
 import nltk
 nltk.download('wordnet')
 # install vader for sentiment analysis
-#nltk.download('vader_lexicon')
+nltk.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 sia = SentimentIntensityAnalyzer()
 # import data processing module
