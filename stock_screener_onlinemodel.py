@@ -828,10 +828,10 @@ def main():
 
     #Thomas's
     #NEWS_API_KEY = '89ae2f1029c9415e886c3f321a29076d' 
-    NEWS_API_KEY = '192773fbfc124e0a8cdda5b4c3093eaf' 
+    #NEWS_API_KEY = '192773fbfc124e0a8cdda5b4c3093eaf' 
 
     #Naomi's
-    #NEWS_API_KEY = 'ecf7a836f0004036ae5f88f665dcc627'
+    NEWS_API_KEY = 'ecf7a836f0004036ae5f88f665dcc627'
     #NEWS_API_KEY = '066de2ef1d0446fa9f66beb93898e595'
     #NEWS_API_KEY = '595f99ca87644eb281030b4278b97b0d'
 
