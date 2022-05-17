@@ -732,14 +732,16 @@ def main():
     with  pattern_cols[0]:
         st.subheader('Consolidating/ Breakout Check')
         if is_consolidating(df,consolidating_percentage):
-            st.markdown(f'<h3 style="color:#b3aaaa;font-size:24px;">{"Worth to put it in your watchlist"}</h3>', unsafe_allow_html=True)
-            st.write(stock+' is consolidating.')
+            if is_breaking_out(df):
+                st.markdown(f'<h3 style="color:#33ff33;font-size:24px;">{"Bullish"}</h3>', unsafe_allow_html=True)
+                st.write(stock +' is breaking out.')
+            else:
+                st.markdown(f'<h3 style="color:#b3aaaa;font-size:24px;">{"Worth to put it in your watchlist"}</h3>', unsafe_allow_html=True)
+                st.write(stock+' is consolidating.')
         else:
             st.markdown(f'<h3 style="color:#b3aaaa;font-size:24px;">{"Neutral"}</h3>', unsafe_allow_html=True)
             st.write(stock + ' is not consolidating.')
-        if is_breaking_out(df):
-            st.markdown(f'<h3 style="color:#33ff33;font-size:24px;">{"Bullish"}</h3>', unsafe_allow_html=True)
-            st.write(stock +' is breaking out.')
+        
 
 
     with  pattern_cols[1]:
