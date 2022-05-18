@@ -731,16 +731,14 @@ def main():
     with  pattern_cols[0]:
         st.subheader('Consolidating/ Breakout Check')
         if is_consolidating(df,consolidating_percentage):
-            if is_breaking_out(df):
-                st.markdown(f'<h3 style="color:#33ff33;font-size:24px;">{"Bullish"}</h3>', unsafe_allow_html=True)
-                st.write(stock +' is breaking out.')
-            else:
-                st.markdown(f'<h3 style="color:#b3aaaa;font-size:24px;">{"Worth to put it in your watchlist"}</h3>', unsafe_allow_html=True)
-                st.write(stock+' is consolidating.')
+            st.markdown(f'<h3 style="color:#b3aaaa;font-size:24px;">{"Worth to put it in your watchlist"}</h3>', unsafe_allow_html=True)
+            st.write(stock+' is consolidating.')
         else:
             st.markdown(f'<h3 style="color:#b3aaaa;font-size:24px;">{"Neutral"}</h3>', unsafe_allow_html=True)
             st.write(stock + ' is not consolidating.')
-        
+        if is_breaking_out(df):
+            st.markdown(f'<h3 style="color:#33ff33;font-size:24px;">{"Bullish"}</h3>', unsafe_allow_html=True)
+            st.write(stock +' is breaking out.')
 
 
     with  pattern_cols[1]:
@@ -827,10 +825,10 @@ def main():
 
     #Thomas's
     #NEWS_API_KEY = '89ae2f1029c9415e886c3f321a29076d' 
-    #NEWS_API_KEY = '192773fbfc124e0a8cdda5b4c3093eaf' 
+    NEWS_API_KEY = '192773fbfc124e0a8cdda5b4c3093eaf' 
 
     #Naomi's
-    NEWS_API_KEY = 'ecf7a836f0004036ae5f88f665dcc627'
+    #NEWS_API_KEY = 'ecf7a836f0004036ae5f88f665dcc627'
     #NEWS_API_KEY = '066de2ef1d0446fa9f66beb93898e595'
     #NEWS_API_KEY = '595f99ca87644eb281030b4278b97b0d'
 
