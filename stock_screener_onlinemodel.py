@@ -28,7 +28,7 @@ import plotly.graph_objects as go
 # for recognition
 from keras import models #for importing the trained model
 import numpy as np #for converting the image into a numpy array
-from keras.preprocessing import image #for reading the image
+from tf.keras.preprocessing import image #for reading the image
 
 # Import streamlit
 import streamlit as st
