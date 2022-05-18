@@ -391,7 +391,7 @@ def VCP_recognition(df):
   chart = tf.keras.preprocessing.image.load_img('smooth_chart.png')
 
   # Convert the image to a numpy array
-  chart_array = image.img_to_array(chart)
+  chart_array = tf.keras.preprocessing.image.img_to_array(chart)
 
   #make prediction
   predictions = model.predict(np.expand_dims(chart_array,0))
