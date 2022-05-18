@@ -639,8 +639,8 @@ def main():
   if stock=='':
     #st.image('https://www.constructconnect.com/hubfs/Blog%20Images%20and%20Media/Stock-Markets-Header-Graphic-New-Jan-05-2021-07-18-56-72-PM.jpg')
     st.title('Stock Screener')
-    st.text('We provide: Pattern Recognition - Consolidating/Breakout | Candlstick Pattern | VCP Pattern | Put-Call-Ratio Calculation | News Sentiment Polarization')
-
+    st.text('We provide: Pattern Recognition - Consolidating/Breakout | Candlstick Pattern | VCP Pattern | Put-Call-Ratio Calculation |')
+    st.text('News Sentiment Polarization')
     cols=st.columns(2)
     
     pd.set_option('expand_frame_repr', False)
