@@ -28,8 +28,8 @@ import plotly.graph_objects as go
 # for recognition
 from keras import models #for importing the trained model
 import numpy as np #for converting the image into a numpy array
-from tf.keras.preprocessing import image #for reading the image
-
+from keras.preprocessing import image #for reading the image
+import tensorflow as tf
 # Import streamlit
 import streamlit as st
 from PIL import Image
@@ -388,7 +388,7 @@ def VCP_recognition(df):
   smooth_out_and_save_chart(df)
 
   #read the image
-  chart = image.load_img('smooth_chart.png')
+  chart = tf.keras.preprocessing.image.load_img('smooth_chart.png')
 
   # Convert the image to a numpy array
   chart_array = image.img_to_array(chart)
