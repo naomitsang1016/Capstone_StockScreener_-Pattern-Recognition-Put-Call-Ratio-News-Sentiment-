@@ -72,7 +72,6 @@ if not os.path.isdir("/tmp/ta-lib"):
     os.system("make")
     # install
     os.system("make install")
-    os.system('pip3 install --global-option=build_ext --global-option="-L/home/appuser/lib/" --global-option="-I/home/appuser/include/" ta-lib')
     # back to the cwd
     os.chdir(default_cwd)
     sys.stdout.flush()
@@ -81,7 +80,7 @@ if not os.path.isdir("/tmp/ta-lib"):
 from ctypes import *
 
 #lib = CDLL("/home/appuser/lib/libta_lib.so.0.0.0")
-lib = CDLL("/home/appuser/lib/libta_lib.so.0")
+lib = CDLL("/home/appuser/lib/libta_lib.so.0.0.0")
 # import library
 try:
     import talib
