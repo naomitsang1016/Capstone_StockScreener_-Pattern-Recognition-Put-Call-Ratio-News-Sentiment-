@@ -7,7 +7,7 @@ The project was divided into three parts: pattern recognition(CNN), Put-Call-Rat
 
 The data was auto collected by using yfinance library and newsapi.
 
-Streamlit demonstration: (Currently not available because of Ta-lib installation issue for share.streamlit.io, I am still trying to fix it. The offline version is still available, please download the py file and try it on your own computer.)
+Streamlit demonstration: (Currently not available because of Ta-lib installation issue for share.streamlit.io, I am still trying to fix it. The offline version is still available, please download the py file - stock_screener.py, and try it on your own computer.)
 https://share.streamlit.io/naomitsang1016/capstone_stockscreener_-pattern-recognition-put-call-ratio-news-sentiment-/main/stock_screener_onlinemodel.py
 
 
