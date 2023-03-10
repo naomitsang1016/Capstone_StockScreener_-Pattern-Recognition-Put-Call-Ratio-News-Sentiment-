@@ -576,8 +576,8 @@ def main():
         plot_graph(df1)
         st.subheader('NASDAQ 100 companies ')
         payload=pd.read_html('https://en.wikipedia.org/wiki/Nasdaq-100')
-        fourth_table = payload[3]
-        nasdaq_100 = fourth_table
+        fifth_table = payload[4]
+        nasdaq_100 = fifth_table
         st.dataframe(nasdaq_100)
    
         
