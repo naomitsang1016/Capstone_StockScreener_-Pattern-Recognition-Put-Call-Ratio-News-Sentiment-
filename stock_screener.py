@@ -698,34 +698,34 @@ def main():
     with cols[1]:
         st.write('Volume of Option Put: {} USD'.format(int(df_Put_Call_Ratio['Put_Volume'][0])))
     
-    '''
+    
     ## Financial Data
     ####Not working anymore as yfinance update in 2023-01, ####
     ####the below info will not be provided in the future  ####
-    st.markdown("""---""")
-    st.subheader('Financial Data (in USD)')
-    cols=st.columns(4)
-    with cols[0]:
-        st.write('Profit Margins: {}'.format(info['profitMargins']))
-        st.write('Operating Margins: {}'.format(info['operatingMargins']))
-        st.write('Current Ratio: {}'.format(info['currentRatio']))
-        st.write('Debt To Equity: {}'.format(info['debtToEquity']))
-    with cols[1]:
-        st.write('Gross Margins: {}'.format(info['grossMargins']))
-        st.write('Gross Profits: {}'.format(info['grossProfits']))
-        st.write('Return On Assets: {}'.format(info['returnOnAssets']))
-        st.write('Return On Equity: {}'.format(info['returnOnEquity']))
-    with cols[2]:
-        st.write('Operating Cashflow: {}'.format(info['operatingCashflow']))
-        st.write('Free Cashflow: {}'.format(info['freeCashflow']))
-        st.write('Number Of Analyst Opinions: {}'.format(info['numberOfAnalystOpinions']))
-        st.write('Revenue Per Share: {}'.format(info['revenuePerShare']))
-    with cols[3]:
-        st.write('Revenue Growth: {}'.format(info['revenueGrowth']))
-        st.write('Earnings Growth: {}'.format(info['earningsGrowth']))
-        st.write('Target Mean Price: {}'.format(info['targetMeanPrice']))
-        st.write('Quick Ratio: {}'.format(info['quickRatio']))
-    '''
+    # st.markdown("""---""")
+    # st.subheader('Financial Data (in USD)')
+    # cols=st.columns(4)
+    # with cols[0]:
+    #     st.write('Profit Margins: {}'.format(info['profitMargins']))
+    #     st.write('Operating Margins: {}'.format(info['operatingMargins']))
+    #     st.write('Current Ratio: {}'.format(info['currentRatio']))
+    #     st.write('Debt To Equity: {}'.format(info['debtToEquity']))
+    # with cols[1]:
+    #     st.write('Gross Margins: {}'.format(info['grossMargins']))
+    #     st.write('Gross Profits: {}'.format(info['grossProfits']))
+    #     st.write('Return On Assets: {}'.format(info['returnOnAssets']))
+    #     st.write('Return On Equity: {}'.format(info['returnOnEquity']))
+    # with cols[2]:
+    #     st.write('Operating Cashflow: {}'.format(info['operatingCashflow']))
+    #     st.write('Free Cashflow: {}'.format(info['freeCashflow']))
+    #     st.write('Number Of Analyst Opinions: {}'.format(info['numberOfAnalystOpinions']))
+    #     st.write('Revenue Per Share: {}'.format(info['revenuePerShare']))
+    # with cols[3]:
+    #     st.write('Revenue Growth: {}'.format(info['revenueGrowth']))
+    #     st.write('Earnings Growth: {}'.format(info['earningsGrowth']))
+    #     st.write('Target Mean Price: {}'.format(info['targetMeanPrice']))
+    #     st.write('Quick Ratio: {}'.format(info['quickRatio']))
+    
 
 
     #News sentiment analysis
