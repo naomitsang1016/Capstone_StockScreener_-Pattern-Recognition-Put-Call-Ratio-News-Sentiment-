@@ -712,11 +712,11 @@ def main():
     cols=st.columns(2)
     with cols[0]:
         st.subheader('Latest Stock Price: {}'.format(round(current_price,2)))
-        st.subheader('Industry: {}'.format(info['industry']))
+        #st.subheader('Industry: {}'.format(info['industry'])) #not working anymore as the yfinance 2023-01 update
 
     with cols[1]:
         st.subheader('Volume: {}'.format(round(latest_volume,2)))
-        st.subheader('P/E: {}'.format(info['trailingPE']))
+        #st.subheader('P/E: {}'.format(info['trailingPE'])) #not working anymore as the yfinance 2023-01 update
     
     #plot the candlestick chart here, below the volume and price and above the template check
     df = download_data(stock)
@@ -786,8 +786,10 @@ def main():
     with cols[1]:
         st.write('Volume of Option Put: {} USD'.format(int(df_Put_Call_Ratio['Put_Volume'][0])))
     
-
+    '''
     ## Financial Data
+    ####Not working anymore as yfinance update in 2023-01, ####
+    ####the below info will not be provided in the future  ####
     st.markdown("""---""")
     st.subheader('Financial Data (in USD)')
     cols=st.columns(4)
@@ -811,7 +813,8 @@ def main():
         st.write('Earnings Growth: {}'.format(info['earningsGrowth']))
         st.write('Target Mean Price: {}'.format(info['targetMeanPrice']))
         st.write('Quick Ratio: {}'.format(info['quickRatio']))
-    
+    '''
+   
 
 
     #News sentiment analysis
