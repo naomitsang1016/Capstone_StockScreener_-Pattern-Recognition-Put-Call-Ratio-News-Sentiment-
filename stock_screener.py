@@ -618,7 +618,7 @@ def main():
     # if stock exists, run the program
     
     #company_name = ticker.info['longName']#not working anymore as the yfinance 2023-01 update
-    #st.title('{} - {}'.format(stock,company_name))#not working anymore as the yfinance 2023-01 update
+    st.title('{}'.format(stock))#not working anymore as the yfinance 2023-01 update
     current_price=ticker.history(period='1d')['Close'][0]
     latest_volume=ticker.history(period='1d')['Volume'][0]
     cols=st.columns(2)
