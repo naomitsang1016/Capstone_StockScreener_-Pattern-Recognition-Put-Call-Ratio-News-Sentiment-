@@ -3,9 +3,11 @@
 
 The project was divided into three parts: pattern recognition(CNN), Put-Call-Ratio and News Sentiment Analysis(NLP).
 
-
-
 The data was auto collected by using yfinance library and newsapi.
+
+
+Errors have been fixed on 2023-03-10 which caused by an update in yfinance library.
+
 
 Streamlit Video Demonstration: (Currently not available because of Ta-lib installation issue for share.streamlit.io. The offline version is still available, please download the py file - stock_screener.py, and try it on your own computer.)
 https://youtu.be/ANJRw7VxH60
