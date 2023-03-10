@@ -753,8 +753,8 @@ def main():
     start_date = date(year = end_date.year, month = end_date.month, day = end_date.day-5)
     st.markdown("""---""")
     st.subheader('New Sentiment')
-    keywrd = company_name
-    #keywrd = stock
+    #keywrd = company_name
+    keywrd = stock
     tent_vs_price_df,trend,sentiments_all = sent_vs_price(NEWS_API_KEY,start_date, end_date, keywrd, stock)
     
     if ('grows' in trend) or ('grew' in trend):
