@@ -698,10 +698,10 @@ def main():
         
     #this is to check whether the stock exists
     ticker = yf.Ticker(stock)
-    info = None
+    #info = None #not working anymore as the yfinance 2023-01 update
     #try:
         #check if the stock exists
-    info = ticker.info
+    #info = ticker.info #not working anymore as the yfinance 2023-01 update
 
     # if stock exists, run the program
     
