@@ -10,7 +10,7 @@ Errors have been fixed on 2023-03-10 which caused by an update in yfinance libra
 
 
 Streamlit Video Demonstration: (Currently not available because of Ta-lib installation issue for share.streamlit.io. The offline version is still available, please download the py file - stock_screener.py, and try it on your own computer.)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ANJRw7VxH60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![Streamlit Video Demonstration](https://img.youtube.com/vi/ANJRw7VxH60/0.jpg)](https://www.youtube.com/watch?v=ANJRw7VxH60)
 https://youtu.be/ANJRw7VxH60
 
 Version 2022 May:
