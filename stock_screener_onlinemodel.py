@@ -28,7 +28,7 @@ import plotly.graph_objects as go
 # for recognition
 from keras import models #for importing the trained model
 import numpy as np #for converting the image into a numpy array
-from keras.preprocessing import image #for reading the image
+import keras.utils as image #for reading the image
 import tensorflow as tf
 # Import streamlit
 import streamlit as st
@@ -46,7 +46,7 @@ sia = SentimentIntensityAnalyzer()
 # import data processing module
 import numpy as np
 # import newsapi to collect news headlines and description
-from newsapi import NewsApiClient
+from newsapi.newsapi_client import NewsApiClient
 from pathlib import Path
 import requests
 import torch
@@ -705,7 +705,13 @@ def main():
     # if stock exists, run the program
     
     #company_name = ticker.info['longName']#not working anymore as the yfinance 2023-01 update
-    st.title('{}'.format(stock))#not working anymore as the yfinance 2023-01 update
+   
+
+    # stock list csv from https://www.nasdaq.com/market-activity/stocks/screener
+
+    stock_list=pd.read_csv('nasdaq_stocklist_202303.csv')[['Symbol','Name']]
+    company_name=stock_list[stock_list['Symbol']==stock]['Name'].tolist()[0]
+    st.title('{} {}'.format(stock, company_name))#not working anymore as the yfinance 2023-01 update
     current_price=ticker.history(period='1d')['Close'][0]
     latest_volume=ticker.history(period='1d')['Volume'][0]
     cols=st.columns(2)
@@ -827,8 +833,8 @@ def main():
     #NEWS_API_KEY = 'bc44334904894bb996cdb01a88d35e0d'
 
     #Thomas's
-    #NEWS_API_KEY = '89ae2f1029c9415e886c3f321a29076d' 
-    NEWS_API_KEY = '192773fbfc124e0a8cdda5b4c3093eaf' 
+    NEWS_API_KEY = '89ae2f1029c9415e886c3f321a29076d' 
+    #NEWS_API_KEY = '192773fbfc124e0a8cdda5b4c3093eaf' 
 
     #Naomi's
     #NEWS_API_KEY = 'ecf7a836f0004036ae5f88f665dcc627'
@@ -841,8 +847,8 @@ def main():
     start_date = date(year = end_date.year, month = end_date.month, day = end_date.day-5)
     st.markdown("""---""")
     st.subheader('New Sentiment')
-    #keywrd = company_name
-    keywrd = stock
+    keywrd = company_name
+    # keywrd = stock
     tent_vs_price_df,trend,sentiments_all = sent_vs_price(NEWS_API_KEY,start_date, end_date, keywrd, stock)
     
     if ('grows' in trend) or ('grew' in trend):
